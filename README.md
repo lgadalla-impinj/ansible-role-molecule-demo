@@ -493,4 +493,5 @@ Run "sudo yum update" to apply all updates.
 [ec2-user@ip-172-31-71-132 ~]$ 
 
 ```
-Kilroy was here!
+
+Molecule explicitly references [GitHub Actions](https://molecule.readthedocs.io/en/latest/ci.html#github-actions) in its current documentation.
