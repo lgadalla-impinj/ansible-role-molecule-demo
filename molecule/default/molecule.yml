@@ -6,8 +6,12 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: instance
-    image: centos:7
+  - name: centos7
+    image: geerlingguy/docker-centos7-ansible
+  - name: ubuntu18
+    image: geerlingguy/docker-ubuntu1804-ansible
+  - name: fedora29
+    image: geerlingguy/docker-fedora29-ansible
 provisioner:
   name: ansible
   lint:
