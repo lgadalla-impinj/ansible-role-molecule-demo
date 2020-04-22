@@ -18,3 +18,8 @@
     /tmp/hello.world
   args:
     creates: /tmp/hello.world
+
+- name: install Molecule
+  pip:
+    name: "Molecule==2.22"
+    state: present
