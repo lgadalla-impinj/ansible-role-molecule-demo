@@ -1,4 +1,4 @@
-sh == 1.12.14
+sh==1.12.14
 molecule==2.22
 ansible==2.9
 ansible-lint==4.2.0
