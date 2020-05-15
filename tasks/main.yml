@@ -19,6 +19,20 @@
   args:
     creates: /tmp/hello.world
 
+- name: Install package dependencies
+  package:
+    name: 
+      - build-essential
+      - libpython-dev
+    state: present
+
+- name: Install pip dependencies
+  pip:
+    name:
+      - pip==20.1
+      - setuptools==44.0.0
+      - wheel==0.33.6
+
 - name: install Molecule
   pip:
     name: "Molecule==2.22"
