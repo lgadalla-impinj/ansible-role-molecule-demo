@@ -23,15 +23,15 @@
   include_vars:
     file: '{{ ansible_distribution }}.yml'
 
-- name: Include OS distribution related tasks
-  include_tasks: '{{ ansible_distribution }}.yml'
-
 - name: Install pip dependencies
   pip:
     name:
       - pip==20.1
       - setuptools==44.0.0
       - wheel==0.33.6
+
+- name: Include OS distribution related tasks
+  include_tasks: '{{ ansible_distribution }}.yml'
 
 - name: install Molecule
   pip:
