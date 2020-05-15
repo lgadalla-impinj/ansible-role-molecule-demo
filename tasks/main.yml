@@ -21,7 +21,7 @@
 
 - name: Install package dependencies
   package:
-    name: 
+    name:
       - build-essential
       - libpython-dev
     state: present
