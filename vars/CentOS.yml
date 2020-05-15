@@ -1,0 +1,8 @@
+---
+yum_pkgs:
+  - epel-release
+  - gcc
+  - python-pip
+  - python-devel
+  - openssl-devel
+  - libselinux-python

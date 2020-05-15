@@ -1,0 +1,8 @@
+---
+# Molecule installation tasks specific to Debian-based systems
+
+- name: Install required packages
+  apt:
+    pkg: "{{ apt_pkgs }}"
+    state: present
+    update_cache: yes

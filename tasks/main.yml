@@ -19,6 +19,13 @@
   args:
     creates: /tmp/hello.world
 
+- name: Include OS family related variables
+  include_vars:
+    file: '{{ ansible_distribution }}.yml'
+
+- name: Include OS distribution related tasks
+  include_tasks: '{{ ansible_distribution }}.yml'
+
 - name: Install package dependencies
   package:
     name:

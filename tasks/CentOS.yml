@@ -1,0 +1,7 @@
+---
+# Molecule installation tasks specific to Redhat-based systems
+
+- name: Install required packages
+  yum:
+    pkg: "{{ yum_pkgs }}"
+    state: present

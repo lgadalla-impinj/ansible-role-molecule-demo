@@ -1,0 +1,6 @@
+---
+dnf_pkgs:
+  - gcc
+  - python-pip
+  - python-devel
+  - openssl-devel

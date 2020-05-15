@@ -1,0 +1,7 @@
+---
+# Molecule installation tasks specific to Redhat-based systems
+
+- name: Install required packages
+  dnf:
+    pkg: "{{ dnf_pkgs }}"
+    state: present
