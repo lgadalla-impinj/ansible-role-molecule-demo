@@ -22,9 +22,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          sudo apt install docker build-essential libpython-dev
+          sudo apt install -y docker build-essential libpython-dev
           python -m pip install --upgrade pip==20.1 setuptools==44.0.0 wheel==0.33.6 molecule==2.22
           pip install -r requirements.txt
       - name: Test with molecule
         run: |
-          molecule test
+          molecule --debug test
