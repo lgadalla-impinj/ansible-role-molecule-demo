@@ -1,6 +1,7 @@
 ---
 yum_pkgs:
   - epel-release
+  - "@Development Tools"
   - gcc
   - python-pip
   - python-devel

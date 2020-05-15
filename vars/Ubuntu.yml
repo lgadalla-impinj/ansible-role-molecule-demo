@@ -1,3 +1,5 @@
 ---
 apt_pkgs:
+  - build-essential
+  - libpython-dev
   - libssl-dev

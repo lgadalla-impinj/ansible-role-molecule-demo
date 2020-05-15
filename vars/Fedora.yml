@@ -1,6 +1,5 @@
 ---
 dnf_pkgs:
-  - gcc
-  - python-pip
+  - "@Development Tools"
   - python-devel
   - openssl-devel
