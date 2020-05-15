@@ -26,13 +26,6 @@
 - name: Include OS distribution related tasks
   include_tasks: '{{ ansible_distribution }}.yml'
 
-- name: Install package dependencies
-  package:
-    name:
-      - build-essential
-      - libpython-dev
-    state: present
-
 - name: Install pip dependencies
   pip:
     name:
