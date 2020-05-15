@@ -23,7 +23,11 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt install docker
-          python -m pip install --upgrade pip
+          python -m pip install --upgrade pip==20.1 setuptools==44.0.0 wheel==0.33.6
+          apt-get -y update
+          apt-get -y install build-essential
+          apt-get -y install libpython-dev
+          pip install molecule==2.22
           pip install -r requirements.txt
       - name: Test with molecule
         run: |
