@@ -1,5 +1,7 @@
 ---
 apt_pkgs:
+  - python-minimal
+  - python-pip
   - build-essential
   - libpython-dev
   - libssl-dev
